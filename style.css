@@ -5,9 +5,9 @@ body {
 .btn {
     height: 200px;
     width: 200px;
-    border: 6px solid black;
+    border: 4px solid black;
     border-radius: 20%;
-    margin: 2.5rem;
+    margin: 0.5rem;
 }
 
 .btn-container {
@@ -16,17 +16,22 @@ body {
 
 }
 
+
 .red {
     background-color:#d95980 ;
+    border-top-left-radius: 100%;
 }
 .yellow {
     background-color:#f99b45 ;
+    border-bottom-left-radius: 100%;
 }
 .green {
-    background-color:#63aac0 ;
+    background-color:#28883d ;
+    border-top-right-radius: 100%;
 }
 .purple {
     background-color:#819ff9 ;
+    border-bottom-right-radius: 100%;
 }
 
 .flash {
@@ -36,3 +41,36 @@ body {
 .userflash {
     background-color: lightgreen;
 }
+
+@media only screen and (max-width: 600px) {
+    /* Styles for mobile devices */
+    body {
+      font-size: 14px;
+      margin: auto;
+      margin-top: 175px;
+      margin-left: 45px;
+    }
+    .btn-container {
+      width: 90%;
+      
+    }
+    .btn {
+        height: 100px;
+        width: 100px;
+        border: 2px solid black;
+        border-radius: 20%;
+        margin: 0.3rem;
+    }
+    .red {
+        border-top-left-radius: 100%;
+    }
+    .yellow {
+        border-bottom-left-radius: 100%;
+    }
+    .green {
+        border-top-right-radius: 100%;
+    }
+    .purple {
+        border-bottom-right-radius: 100%;
+    }
+  }
